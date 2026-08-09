@@ -50,7 +50,7 @@ class SkillLayoutTests(unittest.TestCase):
         raw = path.read_bytes()
         raw.decode("ascii")
         source = raw.decode("ascii")
-        self.assertTrue(source.startswith("#coding:gbk\n"))
+        self.assertEqual(source.splitlines()[0], "#coding:gbk")
         ast.parse(source, filename=str(path), feature_version=(3, 6))
 
     def test_no_local_secrets_or_user_paths_in_skill(self) -> None:
