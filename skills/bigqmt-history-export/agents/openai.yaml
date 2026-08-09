@@ -1,0 +1,4 @@
+interface:
+  display_name: "Big-QMT历史数据导出"
+  short_description: "无GUI导出QMT股票和ETF历史分钟数据，支持断点续传"
+  default_prompt: "使用 $bigqmt-history-export 从运行中的大QMT无界面导出指定标的的历史分钟行情。"
