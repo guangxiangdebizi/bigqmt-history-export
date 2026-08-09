@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.env
+.idea/
+.vscode/
+data/
+logs/
+*.log
+*.parquet
+*.partial
+*.tmp
+QMT_Bridge/
